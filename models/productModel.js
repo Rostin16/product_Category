@@ -4,7 +4,7 @@ const { default: mongoose } = require("mongoose");
 const productSchema=new mongoose.Schema({
     name: String,
     image: String,
-    categoryId: { type: mongoose.Schema.Types.ObjectId,
+         categoryId: { type: mongoose.Schema.Types.ObjectId,
          ref: "category" },
          subCatId:{
             type: mongoose.Schema.Types.ObjectId,
